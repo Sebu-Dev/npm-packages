@@ -1,13 +1,13 @@
 {
-  "name": "my-logo-package",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "sebu-dev-logo",
+  "version": "0.0.1",
+  "main": "index.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "sebu-dev (https://github.com/sebu-dev)",
+  "license": "",
   "type": "commonjs",
   "description": "",
   "dependencies": {
