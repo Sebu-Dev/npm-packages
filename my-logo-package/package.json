@@ -1,14 +1,14 @@
 {
   "name": "sebu-dev-logo",
-  "version": "0.0.3",
-  "main": "index.tsx",
+  "version": "0.0.6",
+  "main": "./src/index.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "sebu-dev (https://github.com/sebu-dev)",
   "license": "",
-  "type": "commonjs",
+  "type": "module",
   "description": "",
   "dependencies": {
     "framer-motion": "^11.15.0",

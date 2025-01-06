@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import logo from "./assets/logo.png";
+import logo from "../assets/logo.png";
 
 export const Logo = ({
   whileHover = { scale: 1.1 }, // Standardwert für Hover
