@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import logo from "./assets/logo.png";
 
-const Logo = ({
+export const Logo = ({
   whileHover = { scale: 1.1 }, // Standardwert für Hover
   whileTap = { scale: 0.9 }, // Standardwert für Tap
   className = "mx-2 h-10 md:w-20", // Standard Tailwind-Klasse
