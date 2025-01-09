@@ -13,7 +13,8 @@ Mein Logo-Paket mit Animationen und Tailwind-Styling, das in verschiedenen Proje
 Installiere das Paket mit npm:
 
 ```bash
-npm i sebu-dev-logo```
+npm i sebu-dev-logo
+```
 
 ```typescript
 import Logo from "sebu-dev-logo";
