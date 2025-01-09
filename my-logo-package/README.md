@@ -13,11 +13,10 @@ Mein Logo-Paket mit Animationen und Tailwind-Styling, das in verschiedenen Proje
 Installiere das Paket mit npm:
 
 ```bash
-npm install my-logo-package
-```
+npm i sebu-dev-logo```
 
 ```typescript
-import Logo from "my-logo-package";
+import Logo from "sebu-dev-logo";
 ```
 
 ## Verwendung
@@ -48,7 +47,7 @@ Du kannst die Animationen und das Styling des Logos durch Props anpassen. Hier e
   whileHover={{ scale: 1.2 }}  // Hover-Animation ändern
   whileTap={{ scale: 0.8 }}    // Tap-Animation ändern
 />
-
+```
 ## Voraussetzungen
 
 - Dein Projekt sollte **React** installiert haben.
@@ -62,6 +61,5 @@ MIT
 
 - **Dependencies**: Unter "Dependencies" wird klar aufgelistet, was für die Nutzung des Pakets erforderlich ist, sodass der Benutzer schnell sehen kann, was er ggf. installieren muss, wenn es nicht bereits im Projekt vorhanden ist.
 - **Installation**: Die `npm install`-Anweisung ist wichtig, um das Paket korrekt zu installieren.
-- **Verwendung**: Eine einfache Schritt-für-Schritt-Anleitung, wie man das Logo einfügt.
 - **Anpassung**: Die Anpassung des Logos wird optional angeboten, damit Benutzer zusätzliche Flexibilität haben.
 ```
