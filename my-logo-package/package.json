@@ -1,6 +1,6 @@
 {
-  "name": "sebu-dev-logo",
-  "version": "0.0.6",
+  "name": "sebu-dev-lib",
+  "version": "0.0.1",
   "main": "./src/index.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,8 @@
   "description": "",
   "dependencies": {
     "framer-motion": "^11.15.0",
-    "react": "^19.0.0"
+    "react": "^19.0.0",
+    "react-icons": "^5.4.0"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
