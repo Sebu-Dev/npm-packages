@@ -33,10 +33,12 @@ export const Navbar: React.FC<NavbarProps> = ({ children }) => {
         <Logo />
       </div>
       <div className="mt-4 lg:m-8 flex items-center justify-center gap-4 text-2xl">
+        {children && (
+          <div className="flex items-center">
+            {children} {/* you can add more icons here*/}
+          </div>
+        )}
         <GithubLink />
-      </div>
-      <div className="flex items-center">
-        {children} {/* you can add more icons here*/}
       </div>
     </nav>
   );
