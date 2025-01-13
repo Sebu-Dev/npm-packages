@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+# Sebu-Dev-React-Lib
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Version:** 0.0.1
 
-Currently, two official plugins are available:
+## Beschreibung
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Diese Bibliothek bietet ein übergeordnetes Layout für React-Anwendungen, das sowohl Styling als auch einen Hintergrund für die gesamte Webseite bereitstellt. \
+Schließen Sie den gesamten Inhalt in das `Layout`, wie im Beispiel beschrieben.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm install sebu-dev-react-lib
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Nutzung
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Beispiel
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```typescript
+import React from "react";
+import { Layout } from "sebu-dev-react-lib";
+import "sebu-dev-react-lib/dist/sebu-dev-react-lib.css";
+
+const App = () => {
+  return (
+    <Layout>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    </Layout>
+  );
+};
+
+export default App;
 ```
+
+## Hinweise
+
+- Stellen Sie sicher, dass Sie die CSS-Datei der Bibliothek importieren, um das Styling korrekt anzuwenden.
+- Das `Layout`-Element sollte das Wurzelelement Ihrer Anwendung sein, um die vorgesehenen Styles und den Hintergrund auf die gesamte Seite anzuwenden.
+
+## Abhängigkeiten
+
+Die folgenden Abhängigkeiten werden bei der Installation automatisch hinzugefügt:
+
+- [motion](https://www.framer.com/motion/)
+- [react-icons](https://react-icons.github.io/react-icons/)
+
+## Lizenz
+
+MIT

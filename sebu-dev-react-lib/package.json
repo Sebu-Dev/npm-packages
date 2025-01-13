@@ -1,13 +1,16 @@
 {
   "name": "sebu-dev-react-lib",
-  "private": true,
-  "version": "0.0.0",
+  "description": "A React component library for reusable components and assets with Tailwind CSS support.",
+  "version": "0.0.1",
+  "private": false,
   "type": "module",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "dist/sebu-dev-react-lib.css",
+    "dist/assets"
   ],
   "exports": {
     ".": {
@@ -15,7 +18,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.es.js"
     },
-    "./dist/style.css": "./dist/style.css"
+    "./dist/style.css": "./dist/style.css",
+    "./dist/assets/*": "./dist/assets/*"
   },
   "scripts": {
     "dev": "tsc && vite build --watch",
@@ -26,6 +30,21 @@
     "preview": "vite preview",
     "postinstall": "npm install motion react-icons"
   },
+  "keywords": [
+    "react",
+    "component-library",
+    "tailwindcss",
+    "vite",
+    "typescript",
+    "frontend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sebu-Dev/npm-packages.git"
+  },
+  "author": "Florian Sebulke",
+  "license": "MIT",
+  "homepage": "https://github.com/yourusername/sebu-dev-react-lib#readme",
   "dependencies": {
     "@vitejs/plugin-react-swc": "^3.7.2",
     "motion": "^11.17.0",
