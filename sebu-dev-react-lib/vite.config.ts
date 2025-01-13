@@ -2,6 +2,7 @@ import path from "path";
 import tailwindcss from "tailwindcss";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
+import VitePluginStaticCopy from "vite-plugin-static-copy";
 
 import react from "@vitejs/plugin-react";
 import { UserConfig } from "vite";
@@ -9,7 +10,18 @@ import { UserConfig } from "vite";
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "./",
-  plugins: [dts({ rollupTypes: true }), react()],
+  plugins: [
+    dts({ rollupTypes: true }),
+    react(),
+    VitePluginStaticCopy({
+      targets: [
+        {
+          src: "lib/assets/*", // Hier gibst du den Pfad zu den Assets an
+          dest: "assets", // Das Zielverzeichnis innerhalb von dist
+        },
+      ],
+    }),
+  ],
   build: {
     sourcemap: true,
     lib: {
