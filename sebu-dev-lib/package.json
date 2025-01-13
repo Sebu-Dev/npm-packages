@@ -1,0 +1,68 @@
+{
+  "name": "sebu-dev-lib-v1",
+  "version": "0.0.4",
+  "private": false,
+  "description": "styling lib",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "declaration": true,
+  "declarationDir": "./dist/types",
+  "emitDeclarationOnly": true,
+  "jsx": "react-jsx",
+  "strict": true,
+  "noEmit": false,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "vite-plugin-dts": "^4.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^22.10.5",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "c8": "^10.1.3",
+    "eslint": "^9.18.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
+    "jest-dom": "^4.0.0",
+    "jsdom": "^26.0.0",
+    "react-test-renderer": "^19.0.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.18.2",
+    "vite": "^6.0.7",
+    "vitest": "^2.1.8"
+  },
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js"
+    },
+    "./styles": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
