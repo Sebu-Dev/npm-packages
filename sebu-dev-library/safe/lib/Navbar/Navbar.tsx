@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { Logo } from "./Logo";
+import { Logo } from "../Logo/Logo";
 function GithubLink() {
   return (
     <motion.div
